@@ -37,7 +37,7 @@ def sort_lists():
     # make input lists into Nx2 list of lists with int elts
     input = [
         [int(el) for el in line.split(' ') if el]
-        for line in read_input_lines(1)
+        for line in read_input_lines()
     ]
     # transpose
     lists = list(map(list, zip(*input)))
