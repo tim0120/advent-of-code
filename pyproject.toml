@@ -1,0 +1,15 @@
+[project]
+name = "advent-of-code"
+version = "0.1.0"
+description = "Advent of Code solutions"
+dependencies = [
+    "requests",
+    "pytest"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
