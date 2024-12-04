@@ -1,7 +1,7 @@
 import pyperclip
 import sys
 
-from src.input_reader import read_input_lines
+from utils.inputs import read_input_lines
 
 def part1(reports):
     # brute force solution since I want to get this in before EOD

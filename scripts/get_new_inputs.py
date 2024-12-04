@@ -18,7 +18,7 @@ def get_new_inputs(session_token, year=None):
         max_day = current_date.day
     
     for day in range(1, max_day + 1):
-        input_file = input_dir / year / f'day{day:02d}.txt'
+        input_file = input_dir / str(year) / f'day{day:02d}.txt'
         
         if input_file.exists():
             print(f'Skipping day {day}, input already exists')

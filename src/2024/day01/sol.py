@@ -2,7 +2,7 @@ from collections import Counter
 import pyperclip
 import sys
 
-from src.input_reader import read_input_lines
+from utils.inputs import read_input_lines
 
 def part1(sorted_lists, copy=False):
     # take diffs
