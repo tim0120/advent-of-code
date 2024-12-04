@@ -1,13 +1,16 @@
 import os
 import time
 import requests
-from datetime import datetime, date
+from datetime import datetime
 from pathlib import Path
+
+import pytz
 
 def get_new_inputs(session_token, year=None):
     """Download all available Advent of Code inputs for specified year."""
     year = year or datetime.now().year
-    current_date = date.today()
+    est = pytz.timezone('US/Eastern')
+    current_date = datetime.now(est).date()
     
     input_dir = Path('inputs')
     input_dir.mkdir(exist_ok=True)
